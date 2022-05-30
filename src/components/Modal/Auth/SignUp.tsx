@@ -23,7 +23,7 @@ const SignUp: React.FC<SignUpProps> = () => {
     e.preventDefault();
     if (error) setError('');
     if (signup.password !== signup.confirmPassword) {
-      setError('Passwords dont match!');
+      setError('Passwords do not match!');
       return;
     }
     createUserWithEmailAndPassword(signup.email, signup.password);
